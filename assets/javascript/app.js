@@ -1,26 +1,26 @@
 // ----- Game Variables ----- //
 
 // Initial array of animals
-var animalsArr = ["fox", "cat", "pig", "tiger", "cheetah",
-                  "giraffe", "hedgehog", "skunk", "guinea pig", "lizard",
-                  "goat", "horse", "cow", "alligator", "kangaroo",
-                  "panda", "koala", "deer", "elephant", "racoon", "squirrel"];
+var startingArr = ["fox", "cat", "pig", "tiger", "cheetah",
+                  "porchse", "java", "coffee", "hiking", "backpacking",
+                  "overland", "Jeep", "ford", "fishing", "bass",
+                  "trout", "koala", "deer", "windows", "mac"];
 
 // ----- Helper Functions ----- //
 
-// renderButtons will display the animal buttons for all animals within the
-// animalsArr array.
+// renderButtons will display the starting buttons for all options within the
+//  array.
 function renderButtons() {
   // Empty the buttons panel before redrawing it
   $("#buttonPanel").empty();
 
   // Loop through the array of animals
-  for (var i = 0; i < animalsArr.length; i++) {
+  for (var i = 0; i < startingArr.length; i++) {
     // Dynamicaly generate a button for each animal in the array
     var button = $("<button>");
     button.addClass("animalButton");
-    button.attr("data-animal", animalsArr[i]);
-    button.text(animalsArr[i]);
+    button.attr("data-animal", startingArr[i]);
+    button.text(startingArr[i]);
 
     // Add the button to the HTML
     $("#buttonPanel").append(button);
@@ -30,15 +30,15 @@ function renderButtons() {
 // ----- Event Handlers ----- //
 
 // An event handler for the user form to add additional animals to the array
-$("#add-animal").on("click", function(event) {
+$("#add-entry").on("click", function(event) {
   event.preventDefault();
 
   // Get the input from the textbox
-  var animal = $("#animal-input").val().trim();
+  var animal = $("#new-input").val().trim();
 
   // The animal from the textbox is then added to our animalsArr array
-  animalsArr.push(animal);
-  $("#animal-input").val("");
+  startingArr.push(animal);
+  $("#new-input").val("");
 
   // Redraw the animal buttons
   renderButtons();

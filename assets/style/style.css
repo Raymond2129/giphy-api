@@ -1,5 +1,5 @@
 body {
-	/* background: url(../images/background.png); */
+	background: url(../images/backgroung.png);
 	background-repeat: repeat;
 }
 
@@ -12,12 +12,12 @@ body {
 
 .jumbotron h1 {
 	font-size: 4em;
-  color: #e5d1d9;
+  color: #3a0017;
 }
 
 .jumbotron h2 {
 	font-size: 2em;
-  color: #d3f2de;
+  color: #3a0017;
 }
 
 .animalButton {
@@ -26,10 +26,9 @@ body {
   text-align: center;
   cursor: pointer;
   outline: none;
-  color: #72a1d3;
-  background-color: #bdd9c7;
+  color: #047dff;
+  background-color: #03092938;
   border: none;
-  border-radius: 15px;
   box-shadow: 0 6px #999;
   display: inline;
   margin: 5px 5px;
@@ -40,8 +39,8 @@ body {
 }
 
 .animalButton:active {
-  background-color: #f2d3e7;
-  box-shadow: 0 5px #666;
+  background-color: #03092938;
+  box-shadow: 0 5px rgb(84, 84, 84);
   transform: translateY(4px);
 }
 
@@ -52,10 +51,10 @@ body {
 .animalGif {
   margin: 20px 20px 0px 0px;
   float: left;
-  border-radius: 15px 50px;
+  /* border-radius: 15px 50px; */
   position: relative;
   left: -15px;
-  background-color: #f2d3e7;
+  background-color: #03092938;
 }
 
 .animalGif:hover {
@@ -64,58 +63,53 @@ body {
 
 .animalGif h2 {
   font-size: 15px;
-  color: #72a1d3;
+  color: #047dff;
   text-align: center;
   position: relative;
   top: -3px;
 }
 
-.animalGif img {
-  border-radius: 15px 50px;
-}
 
 .formPanel {
   position: relative;
   top: 30px;
   right: 35px;
-  border-radius: 15px 50px;
-  background-color: #f2d3e7;
+  background-color: #03092938;
   height: 145px;
 }
 
 .inputLabel {
   font-size: 15px;
-  color: #72a1d3;
+  color: #047dff;
   margin: 15px 0px;
   margin-left: 32px;
 }
 
-#animal-input {
+#entry-input {
   width: 137px;
   margin-left: 15px;
 }
 
-#animal-input:focus {
+#entry-input:focus {
   background-color: #bdd9c7;
 }
 
-#add-animal {
+#add-entry {
   margin-top: 15px;
   margin-left: 15px;
   padding: 5px 45px;
 }
 
-#footerSpacer {
+#footerSpace {
   background: transparent;
   width: 100%;
   height: 70px;
 }
 
-#footerPanel {
+#footer {
   text-align: center;
-  color: #72a1d3;
-  background-color: #bdd9c7;
-  border-radius: 15px;
+  color: #047dff;
+  background-color: #03092938;
   padding-top: 10px;
   padding-bottom: 10px;
 }
